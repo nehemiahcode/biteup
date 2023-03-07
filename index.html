@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- NEHEMIAH'S WEBSITE -->
+        <title>BITEUP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/f8c8d43adc.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="favicon (2).png">
+        <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="myBtn">
+                <button id="dark-mode-toggle">
+                    <i id="dark-mode-icon" class="fas fa-sun"></i>
+                   </button>
+                   </div>
+                <script>
+                    const toggler = document.getElementById("dark-mode-toggle");
+                    const icon = document.getElementById("dark-mode-icon")
+            
+                    //check if theme is already set in local storage;
+                    const currentTheme = localStorage.getItem("theme");
+                    if (currentTheme) {
+                        document.body.classList.add(currentTheme);
+                        icon.classList.add(currentTheme === "dark-mode" ? "fa-moon" : "fa-sun");
+                    }
+            
+                    toggler.addEventListener("click", () => {
+                        document.body.classList.toggle("dark-mode");
+                        icon.classList.toggle("fa-sun");
+                        icon.classList.toggle("fa-moon");
+            
+                        //save theme to local storage.
+                        if (document.body.classList.contains("dark-mode")) {
+                            localStorage.setItem("theme", "dark-mode");
+                        }else {
+                            localStorage.setItem("theme", "");
+                        }
+                    });
+                   </script>
+            <div class="preloader">
+              <div cclass="loading">
+                <div class="loading-spinner"></div>
+              </div>
+            </div>
+            
+             <script>
+                setTimeout(function() {
+                    document.querySelector(".preloader").style.display = "none";
+                }, 5000);
+            </script>
+           
+        <header id="header">
+           <span><a href="#" class="logo" title="LOGO"><img src="Screenshot_20230119-202642~2.png" style="width:40px; height:40px"></a></span>
+         <div id="toggle"></div>
+            <div id="navbar">
+         <ul>
+                <li><a href="#home" title="HOME">HOME</a></li>
+                <li><a href="#about" title="ABOUT">ABOUT</a></li>
+                <li><a href="#menu" title="MENU">MENU</a></li>
+                <li><a href="#blog" title="BLOG">BLOG</a></li>
+                <li><a href="#contact" title="CONTACT">CONTACT</a></li>
+        </ul>
+            </div>
+        </header>
+      
+       <div class="container">
+        <img src="jalao-home-gallery-2.jpg" class="img1" width="100%" id="home">
+        
+        <div class="center">
+            <center>
+            <p style="font-size: 20px; font-weight:100; color: red;padding-top: 60px;">AFFORDABLE
+                 PRICES YOU CAN TRUST</p><br>
+                 <h1 style="font-family:cursive; color:#ff0000;">Biteup!</span>Home of Catering.</h1>
+                 <br>
+            <h1 id="text">CHOOSE AND EAT  <span style="color: #fff"> TO YOUR FILL</span></h1>
+            <br>
+            <a href="#explore"><button class="buttons">EXPLORE NOW</button></a>
+            </center>
+        </div>
+       </div>
+       
+       <center>
+      
+       <div class="row">
+        <br>
+        <p id="about"></p>
+        <div class="column2" height="400px;" >
+            <h1 class="p2" style="font-weight: bold; font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">ABOUT</h1>
+            <h2 style="font-family: system-ui, -apple-system, 
+            BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+             sans-serif; font-weight: bold;" id="span2">
+                THE TASTE IS AT YOUR DOOR STEP</h2>          
+            <p style="font-size: 19px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                Thanks for choosing <strong>Biteup!</strong>. We at <strong>Biteup!</strong> 
+                specialize in mouth watering and satisfying cuisine catering. Our
+                 team are experienced chefs and dedicated staff have a passion for
+                  creating mouth watering dishes that leaves a last impression on
+                   you and your guests. Thanks for your patronage.
+                  We look forward to working with you.</p>
+        </div>
+      
+        <div class="column2" height="400px;">
+            <img src="ready-healthy-food-catering-menu-260nw-1756143512 (2).jpg" style="width: 100%;height: 400px">
+        </div>
+    </div>
+    
+    </center>
+       <div style="background:rgba(255, 0, 0, 0.822); height: auto">
+        <div class="row">
+            <div class="column" style="height: 300px">
+                <i class="fa-solid fa-champagne-glasses" style="font-size:90px;color:white" id="icons"></i>
+                <h3 style="color:white">Catering</h3>
+                <p style="font-size: 18px;color:white">Our catering services are reliable and trustworthy.<br>You can contact us now for any kind of catering services.
+                <br>Explore!</p>
+            </div>
+
+            <div class="column" style="height:300px">
+                <i class="fa-sharp fa-solid fa-heart" style="font-size: 90px;color:white" id="icons"></i>
+                <h3 style="color:white">Services</h3>
+                <p style="color:white; font-size:18px">Our Serving is the best so far......</p><br>
+                <li id="li">Clean serving untensils</li>
+                <li id="li">Clean and decent workers</li>
+                <li id="li">Clean enviroment</li>
+               
+              
+            </div>
+
+            <div class="column" style="height:300px">
+                <i class="fa-solid fa-layer-group" style="font-size:90px;color:white" id="icons"></i>
+                <h3 style="color:white">Events</h3>
+                <p style="font-size:18px;color:white">We do organise and cary out all kinds of events:</p>
+                <li id="li">Marriage</li>
+                <li id="li">Burial</li>
+                <li id="li">School parties</li>
+                <li id="li">Seasons events</li>
+            </div>
+        </div>
+      </div>
+
+       <div class="row">
+        <p id="menu"></p><span id="explore"></span>
+        <br>
+        <br>
+        <h1 style="text-align:center">Our <span id="span1">Menu</span></h1>
+        <div class="column">
+            <img src="jalao-home-gallery-4.jpg" width="100%" style="height: 400px" id="img3">
+            <h3 id="h3">HAMBURGER</h3>
+            <span><h3 id="priceA">$1.00</h3><h3 style="text-decoration:line-through;color: red" id="priceB">$2.00</h3></span>
+            <button type="button" class="submit-button">ORDER NOW</button>
+             <span><button type="button" id="bot3" class="submit-button">MORE</button></span>
+        </div>
+        <script>
+            var mySecondImages =  ["jalao-home-gallery-4.jpg", "images (10)-1.jpeg", "images (11)-1.jpeg", "images (12)-1.jpeg"];
+
+            var currentImageIndex = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton2 = document.getElementById("bot3");
+                var imageHolder = document.getElementById("img3");
+                changeImageButton2.addEventListener("click", function() {
+                    currentImageIndex = (currentImageIndex + 1) % mySecondImages.length;
+                    imageHolder.src = mySecondImages[currentImageIndex];
+                });
+            });
+
+            var text = ["HAMBURGER", "BURGER WITH COOKIE","BURGER WITH TOMATO", "BURGER WITH LETHUS"];
+            var burgerText = 0;
+            document.addEventListener("DOMContentLoaded", function() { //it wii make it work after the page has finished loding
+                var changeTextButton = document.getElementById("bot3");
+                var textHolder = document.getElementById("h3");
+                changeTextButton.addEventListener("click", function() {
+                    burgerText = (burgerText + 1) % text.length;
+                    textHolder.innerHTML = text[burgerText];
+                });
+            });
+
+            var paragraphText1 = ["$1.00", "$2.00", "$1.50", "$2.50"];
+            var currentText2 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot3");
+                var textHolder2 = document.getElementById("priceA");
+                changeImageButton.addEventListener("click", function() {
+                    currentText2 = (currentText2 + 1) % paragraphText1.length;
+                    textHolder2.innerHTML = paragraphText1[currentText2];
+                });
+            });
+
+            var paragraphText2 = ["$2.00", "$2.50", "$2.00", "$3.00" 
+                                //    "$5.00", "$4.00", "3.40", "$4.50"
+                                ];
+            var currentText3 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton2 = document.getElementById("bot3");
+                var textHolder3 = document.getElementById("priceB");
+                changeImageButton2.addEventListener("click", function() {
+                    currentText3 = (currentText3 + 1) % paragraphText2.length;
+                    textHolder3.innerHTML = paragraphText2[currentText3];
+                });
+            });
+        </script>
+        
+        <div class="column">
+            <img src="images (21)-1.jpeg" width="100%" style="height: 400px" id="img22">
+            <h3 id="h2">BANANA BREAD</h3>
+            <span><h3 id="priceC">$2.00</h3><h3 style="text-decoration:line-through;color: red" id="priceD">$3.00</h3></span>
+            <span><button type="button" class="submit-button">ORDER NOW</button></span>
+             <span><button type="button" class="submit-button" id="bot2">MORE</button></span>
+        </div>
+        <script>
+           var myThirdImage = [ "images (21)-1.jpeg", "images (17)-1.jpeg", "images (18)-1.jpeg", "images (19)-1.jpeg"];
+           var currentImageIndex2 = 0;
+           document.addEventListener("DOMContentLoaded", function() {
+            var imageButton = document.getElementById("bot2");
+            var imageHolder2 = document.getElementById("img22");
+            imageButton.addEventListener("click", function() {
+                currentImageIndex2 = (currentImageIndex2 + 1) % myThirdImage.length;
+                imageHolder2.src = myThirdImage[currentImageIndex2];
+            }) ;
+           });
+
+           var text1 = ["BANANA BREAD", "BANANA BREAD WITH SUCROSS", "BANANA BREAD WITH YOGURTH","BANANA BREAD WITH ICING"];
+            var currentText1 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var ImageButton = document.getElementById("bot2");
+                var textHolder1 = document.getElementById("h2");
+                ImageButton.addEventListener("click", function() {
+                    currentText1 = (currentText1 + 1) % text1.length;
+                    textHolder1.innerHTML = text1[currentText1];
+                });
+            });
+
+            var paragraphText1 = ["$2.00", "$2.60", "$3.50", "$4.00"];
+            var currentText2 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot2");
+                var textHolder2 = document.getElementById("priceC");
+                changeImageButton.addEventListener("click", function() {
+                    currentText2 = (currentText2 + 1) % paragraphText1.length;
+                    textHolder2.innerHTML = paragraphText1[currentText2];
+                });
+            });
+
+            var paragraphText2 = ["$3.00", "$3.50", "$4.00", "$4.50"];
+            var currentText3 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot2");
+                var textHolder3 = document.getElementById("priceD");
+                changeImageButton.addEventListener("click", function() {
+                    currentText3 = (currentText3 + 1) % paragraphText2.length;
+                    textHolder3.innerHTML = paragraphText2[currentText3];
+                });
+            });
+        </script>
+
+
+        <div class="column">
+            <img src="parippu-vada-indian-milk-tea-260nw-1403240090 (2).jpg"  id="img" width="100%" style="height:400px">
+            <h3 id="h1">CHOCO COOKIE & HIP TEA</h3>
+            <span><h3 id="priceE">$1.90</h3><h3 style="text-decoration:line-through;color: red" id="priceF">$2.00</h3></span>
+            <button type="submit" class="submit-button">ORDER NOW</button>
+             <span><button type="button" class="submit-button" id="bot1" >MORE</button></span>
+        </div>
+       </div>
+       <script>
+          var images = ["parippu-vada-indian-milk-tea-260nw-1403240090 (2).jpg", "images (15)-1.jpeg", "images (14)-1.jpeg", "jalao-home-gallery-3.jpg"];
+            var currentImageIndex = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+            var changeImageButton = document.getElementById("bot1");
+            var image = document.getElementById("img");
+            changeImageButton.addEventListener("click", function() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                image.src = images[currentImageIndex];
+            });
+
+        });
+
+        var text4 = ["CHOCO COOKIE & HIP TEA","COOKIE AND POPDOTS", "COCO COOKIE", "STICKY COOKIE AND CREAM"];
+            var currentText3 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot1");
+                var textHolder = document.getElementById("h1");
+                changeImageButton.addEventListener("click", function() {
+                    currentText3 = (currentText3 + 1) % text4.length;
+                    textHolder.innerHTML = text4[currentText3];
+                });
+            });
+
+            var paragraphText1 = ["$1.90", "$2.50", "$4.50", "$5.00"];
+            var currentText2 = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot1");
+                var textHolder = document.getElementById("priceE");
+                changeImageButton.addEventListener("click", function() {
+                    currentText2 = (currentText2+ 1) % paragraphText1.length;
+                    textHolder.innerHTML = paragraphText1[currentText2];
+                });
+            });
+
+            var paragraphText2 = ["$2.00", "$3.00", "$5.00", "$5.50"];
+            var currentText = 0;
+            document.addEventListener("DOMContentLoaded", function() {
+                var changeImageButton = document.getElementById("bot1");
+                var textHolder2 = document.getElementById("priceF");
+                changeImageButton.addEventListener("click", function() {
+                    currentText = (currentText + 1) % paragraphText2.length;
+                    textHolder2.innerHTML = paragraphText2[currentText];
+                });
+            });
+       </script>
+
+
+   <div class="row">
+    <p id="blog"></p>
+    <br>
+    <h2 style="text-align:center">BLOG</h2>
+    <h2 style="text-align:center">Our Chefs</h2>
+    <div class="column">
+        <div class="cards">
+            <img src="chef-portrait-2.jpg" style="width:100%; height: 300px">
+            <center>
+            <h3>Math Smith</h3>
+            <p><i class=" fa-brands fa-facebook fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class=" fa-brands fa-twitter fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class="fa-brands fa-youtube fa-1.5x" id="media"></i></p>
+            </center>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="cards">
+            <img src="chef-portrait-3.jpg" style="width:100%; height:300px">
+            <center>
+            <h3>Maria Pet</h3>
+            <p><i class=" fa-brands fa-facebook fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class=" fa-brands fa-twitter fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class="fa-brands fa-youtube fa-1.5x" id="media"></i></p>
+             </center>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="cards">
+            <img src="chef-portrait-4.jpg" style="width:100%; height:300px">
+            <center>
+            <h3>Sonia Luke</h3>
+            <p><i class=" fa-brands fa-facebook fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class=" fa-brands fa-twitter fa-1.5x" id="media"></i>&nbsp&nbsp&nbsp&nbsp<i class="fa-brands fa-youtube fa-1.5x" id="media"></i></p>
+            </center>
+        </div>
+    </div>
+   </div>
+     <center>
+  <div>
+    <form>
+        <h1>JOIN US</h1>
+        <p>Hurry Up! Subscribe to our Newsletter and get 25% Off.</p>
+        <br>
+        <br>
+        <input type="email" id="email" placeholder="Email" autocomplete="off" style="text-transform:lowercase">
+     <a href="mailto:ekemezienehemiah@gmail.com"><button type="button" class="btn2">SEND</button></a>
+<br>
+<br>
+   </div>
+   <br>
+     </center>
+  <div class="row">
+    <p id="contact"></p>
+    <br>
+    <h1 style="text-align:center">CONTACT US</h1>
+<div class="column2">
+    <img src="gettyimages-965803246-612x612.jpg"  width="100%" height="400px">
+    </div>
+    <div class="column2" style="height:auto;">
+        <h2 style="text-align:center">Fill in your Details here!</h2>
+       <center>     
+        <form name="myForm">
+        <input type="text" placeholder=" Your Name" name="userText" onkeyup="textValue()" class="id" id="n1" autocomplete="off">
+        <p id="demo5" style="color:red;font-size: 15px;"></p><br>
+        <input type="email" placeholder="Email" required autocomplete="off" style="text-transform:lowercase"><br><br>
+        <p id="demo4" style="color:red;font-size: 15px;"></p>
+        <textarea placeholder="Message" name="message" id="message" onkeyup="validateMessage()" class="id2" autocomplete="off"></textarea>
+        <p id="demo4" style="color:red;font-size: 15px;"></p><br>
+        <button class="btn" type="submit">Send</button>
+        </form>
+    </center>  
+      
+    </div>
+   </div>
+
+   <script>
+       function validateMessage() {
+                var message = document.getElementById("message").value;
+                var inbox = /^[A-Za-z-, -.]+[a-zA-Z0-9._,-]$/;
+                if (message == "") {
+                    document.getElementById("demo4").innerHTML = "Leave a message";
+                }else if (!inbox.test(message)) {
+                    document.getElementById("demo4").innerHTML = "It must be texts only!";
+                }else {
+                    return document.getElementById("demo4").innerHTML = "";
+                }
+            }
+
+
+
+            function textValue() {
+        var n = document.getElementById("n1").value;
+
+        var letters = /^[A-Za-z-, -.]+$/;
+         if (n == "") {
+            document.getElementById("demo5").innerHTML = "Your name here";
+         }else if (!letters.test(n)) {
+            document.getElementById("demo5").innerHTML =  "It must be text only!";
+         }else if (document.myForm.userText.value.length < 10) {
+            document.getElementById("demo5").innerHTML = "Your name must not be more that 10 alphabets!"
+         }
+         else {
+            return document.getElementById("demo5").innerHTML = " ";
+         }
+        }
+
+
+   </script>
+     <!-- <div id="myBtn"><button  id="but" onclick="myClick()"><i class="fa-solid fa-sun-bright"></i></button></div>
+    <script> -->
+<script>
+
+function myClick() {
+    var element = document.body;
+    element.classList.toggle("mode");
+
+    if (document.getElementById("but").inner == '<i class="fa-solid fa-sun-bright"></i>') {
+        document.getElementById("but").innerHTML = '<i class="fa-solid fa-moon"></li>';
+    }else {
+        document.getElementById("but").innerHTML = '<i class="fa-solid fa-sun-bright"></i>';
+    }
+}
+    </script>
+    <hr>
+   <footer>
+    <br>
+    <h2>Bitehub</h2>
+    <p>Catering services.</p>
+    <br>
+     <p>
+                &nbsp&nbsp&nbsp
+                <a href="https://www.facebook.com/ekemezie.nehemiaho">
+                    <i  class=" fa-brands fa-facebook"  style="font-size:20px"></i></a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://twitter.com/Nehemiah1224?t=Q52RUZjIP0CKS-Vj_NvZ-Q&s=09">
+            <i  class=" fa-brands fa-twitter"  style="font-size:20px;"></i></a>
+        &nbsp&nbsp&nbsp&nbsp <a href="https://api.whatsapp.com/send?phone=+2348174174423">
+            <i  class="fa fa-whatsapp" style="font-size:20px;"></i>
+        </a>
+    </p>
+      <br>
+     <p style="font-size: 18px">info@bitehub.com</p>
+      <p>87 Oppsite Labcrest Abuja, Nigeria</p>
+      <p>&copy Bitehub Catering  Services</p>
+      <a href="https://nehemiah-portfolio.netlify.app"><p>Nehemiah</p></a>
+    </footer>
+       </scection>
+
+
+        <script>
+            const header = document.getElementById("header");
+            const toggle = document.getElementById("toggle");
+            const navbar = document.getElementById("navbar");
+
+            document.onclick = function(e) {
+                if (e.target.id !== "header" && e.target.id !== "toggle" && e.target.id !== "navbar") {
+                    toggle.classList.remove("active");
+                navbar.classList.remove("active");
+                }
+            }
+            toggle.onclick = function() {
+                toggle.classList.toggle("active");
+                navbar.classList.toggle("active");
+            }
+
+           
+          var myIndex = 0;
+          carousel()
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for ( i < 0; x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 300)
+          }
+         </script>
+         <!-- THE END -->
+        </body>
+        <html>
